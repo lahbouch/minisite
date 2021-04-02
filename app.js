@@ -10,7 +10,7 @@ app.get('/myform', function(req, res){
     fs.writeFile('users.json', JSON.stringify(users), function (err) {
         if (err) return console.log(err);
       });
-      res.redirect('http://127.0.0.1:5500/list.html')
+      res.redirect('http://127.0.0.1:5500/Siteweb/index.html')
     
 });  
-app.listen(3000)
+app.listen(5000)
