@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!---------------------------------------------------CSS STYLE------------------------------->
+    <link rel="stylesheet" href="/Siteweb/asset/css/styles.css" />
+    <link rel="icon" href="https://solicode.co/Content/SoliCode/images/logo/logo_ofppt.png">
+    
+    <!---------------------------------------------------BOOTSTRAP------------------------------->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="/your-path-to-fontawesome/css/fontawesome.css"
+      rel="stylesheet"
+    />
+    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet" />
+    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet" />
+<script src="/Siteweb/asset/js/main.js" > </script>
+    <title>Mini Site</title>
+  </head>
+  <body>
+    <!---------------------------------------------------page1------------------------------->
+    <div class="container-fluid" id="page1" style="display: block">
+      <nav
+        class="navbar navbar-expand-lg d-flex navbar-light bg-white fixed-top"
+      >
+        <a class="navbar-brand offset-2">
+          <span class="soli"> Soli</span><span class="veille">Veille</span></a
+        >
+        <button
+          class="navbar-toggler"
+          data-target="#my-nav"
+          data-toggle="collapse"
+          aria-controls="my-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="my-nav" class="collapse navbar-collapse">
+          <ul class="navbar-nav mr-auto offset-5">
+            <li class="nav-item">
+              <a class="nav-link active" onclick="pp1()">Accueil </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                tabindex="-1"
+                onclick="pp2()"
+                aria-disabled="true"
+                >Les&nbsp;veilles</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                tabindex="-1"
+                onclick="pp3()"
+                aria-disabled="true"
+                >Ajouter&nbsp;un&nbsp;veille</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container">
+        <p class="lead title-leader text-center">
+          Le <span class="lead-title"> Centre Solicode</span>, École de codage
+          nouvelle génération
+        </p>
+        <div class="row">
+          <div class="col-lg-6 col-md-12 d-flex justify-content-center">
+            <img src="/Siteweb/asset/images/profile/profil1.png" class="pt-5" />
+          </div>
+          <div
+            class="col-lg-6 col-md-12 pt-5 text-center d-flex flex-column justify-content-center pb-5"
+          >
+            <p class="plead-title">
+              <span class="plead">Pédagogie</span>
+              <span class="orange">active</span>
+            </p>
+            <p class="main-text">
+              SolidCode favorise le travail en groupe. Ainsi, les apprenants
+              avancent ensemble vers un même objectif dans un climat de
+              confiance et d'ouverture.
+            </p>
+          </div>
+        </div>
+        <div class="container pt-4">
+          <div class="row">
+            <div
+              class="col-lg-6 col-md-12 pt-5 text-center d-flex flex-column justify-content-center pb-5 pr-5"
+            >
+              <p class="plead-title">
+                <span class="plead">Synergie</span>
+                <span class="orange">du group</span>
+              </p>
+              <p class="main-text">
+                SolidCode favorise le travail en groupe. Ainsi, les apprenants
+                avancent ensemble vers un même objectif dans un climat de
+                confiance et d'ouverture.
+              </p>
+            </div>
+            <div class="col-lg-6 col-md-12 d-flex justify-content-center">
+              <img
+                src="/Siteweb/asset/images/profile/profil2.png"
+                class="pt-5"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="container pb-3">
+          <p class="lead title-leader2 text-center">
+            Le <span class="lead-title"> Centre Solicode</span>
+          </p>
+        </div>
+      </div>
+      <div class="container pt-3">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="d-block w-100"
+                src="/Siteweb/asset/images/slider/img1.png"
+                alt="First slide"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="/Siteweb/asset/images/slider/img2.png"
+                alt="Second slide"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="/Siteweb/asset/images/slider/img3.png"
+                alt="Third slide"
+              />
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <div class="container pb-5">
+        <p class="lead title-leader2 text-center">
+          Une journée à
+          <span class="lead-title"> <span class="soli">Soli</span>code </span>
+        </p>
+      </div>
+      <div
+        class="container pb-3 border-left border-warning d-flex flex-row align-items-center mb-5"
+      >
+        <div>
+          <p class="title-main font-weight-bold">Veille</p>
+          <p class="text-main">
+            Veille par les apprenants pour s'informer sur les dernières
+            technologies
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="container pb-3 border-left border-warning d-flex flex-column justify-content-center mb-5"
+      >
+        <div>
+          <p class="title-main font-weight-bold">Theorie</p>
+          <p class="text-main">Lancement du thème de la journée</p>
+        </div>
+      </div>
+
+      <div
+        class="container pb-3 border-left border-warning d-flex flex-column justify-content-center mb-5"
+      >
+        <div>
+          <p class="title-main font-weight-bold">Challenges / Projet</p>
+          <p class="text-main">
+            Les apprenant.e.s travaillent en groupe et en autonomie sur des
+            projets d’entreprises de l’écosystème de la fabrique.
+          </p>
+        </div>
+      </div>
+      <div class="container mb-4 " hidden>
+        <div
+          class="input-group pl-5 pr-5 d-flex flex-row align-items-center mb-5"
+        >
+          <input
+            type="search"
+            class="form-control rounded"
+            placeholder="searcher un sujet de veille."
+            aria-label="Search"
+            aria-describedby="search-addon"
+          />
+          <button type="button" class="btn btn-outline-warning">Search</button>
+        </div>
+      </div>
+    </div>
+    <!---------------------------------------------------------------------------------------->
+
+    <!---------------------  ------------------------------page2------------------------------->
+    <div class="container-fluid" id="page2" style="display: none">
+      <nav
+        class="navbar navbar-expand-lg d-flex navbar-light bg-white fixed-top"
+      >
+        <a class="navbar-brand offset-2">
+          <span class="soli"> Soli</span><span class="veille">Veille</span></a
+        >
+        <button
+          class="navbar-toggler"
+          data-target="#my-nav"
+          data-toggle="collapse"
+          aria-controls="my-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="my-nav" class="collapse navbar-collapse">
+          <ul class="navbar-nav mr-auto offset-5">
+            <li class="nav-item">
+              <a class="nav-link disabled" onclick="pp1()">Accueil </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="#"
+                tabindex="-1"
+                onclick="pp2()"
+                aria-disabled="true"
+                >Les&nbsp;veilles</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                tabindex="-1"
+                onclick="pp3()"
+                aria-disabled="true"
+                >Ajouter&nbsp;un&nbsp;veille</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container-fluid">
+        <p class="lead title-leader text-center">
+          Le <span class="lead-title"> Centre Solicode</span>, École de codage
+          nouvelle génération
+        </p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 d-flex justify-content-center">
+            <img src="/Siteweb/asset/images/profile/profil3.png" class="pt-5" />
+          </div>
+          <div
+            class="col-lg-6 col-md-12 pt-5 text-center d-flex flex-column justify-content-center pb-5"
+          >
+            <p class="plead-title">
+              <span class="plead">Pédagogie</span>
+              <span class="orange">active</span>
+            </p>
+            <p class="main-text">
+              SolidCode favorise le travail en groupe. Ainsi, les apprenants
+              avancent ensemble vers un même objectif dans un climat de
+              confiance et d'ouverture.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container pb-3">
+        <p class="lead title-leader2 text-center">
+          Les <span class="lead-title"> Veilles</span>
+        </p>
+      </div>
+      <div class="container mb-4">
+        <div
+          class="input-group pl-5 pr-5 d-flex flex-row align-items-center mb-5"
+        >
+          <input
+            type="search"
+            class="form-control rounded"
+            placeholder="searcher un sujet de veille."
+            aria-label="Search"
+            aria-describedby="search-addon"
+          />
+          </a>
+          <button type="button" class="btn btn-outline-warning" id="jsonclick" id="search">Search</button>
+          <ul class="list-group" id="result" ></ul>
+        </div>
+      </div>
+      <div class="container">
+        <div id="datacollected" ></div>
+        <script src="/Siteweb/asset/js/main.js" ></script>
+      </div>
+
+
+
+
+
+<!-------------------------------------------les veilles--------------------------->
+
+
+
+
+     
+        </div>
+      </div>
+    </div>
+        <!---------------------  ------------------------------------------------------------->
+
+    <!---------------------  ------------------------------page3------------------------------->
+    <div class="container-fluid" id="page3" style="display: none">
+      <nav
+        class="navbar navbar-expand-lg d-flex navbar-light bg-white fixed-top"
+      >
+        <a class="navbar-brand offset-2">
+          <span class="soli"> Soli</span><span class="veille">Veille</span></a
+        >
+        <button
+          class="navbar-toggler"
+          data-target="#my-nav"
+          data-toggle="collapse"
+          aria-controls="my-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="my-nav" class="collapse navbar-collapse">
+          <ul class="navbar-nav mr-auto offset-5">
+            <li class="nav-item">
+              <a class="nav-link disabled" onclick="pp1()">Accueil </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                tabindex="-1"
+                aria-disabled="true"
+                onclick="pp2()"
+                >Les&nbsp;veilles</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                tabindex="-1"
+                onclick="pp3()"
+                aria-disabled="true"
+                >Ajouter&nbsp;un&nbsp;veille</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container-fluid">
+        <p class="lead title-leader text-center">
+          Le <span class="lead-title"> Centre Solicode</span>, École de codage
+          nouvelle génération
+        </p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 d-flex justify-content-center">
+            <img src="/Siteweb/asset/images/profile/profil4.png" class="pt-5" />
+          </div>
+          <div
+            class="col-lg-6 col-md-12 pt-5 text-center d-flex flex-column justify-content-center pb-5"
+          >
+            <p class="plead-title">
+              <span class="plead">Ajouter </span>
+              <span class="orange">un veille</span>
+            </p>
+            <p class="main-text">
+              Ajouter un veille pour présenter plus tard.
+            </p>
+          </div>
+          <div class="container pb-3">
+            <p class="lead title-leader2 text-center">
+              Les Registre <span class="lead-title">  un neuvelle veille.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+<!---------------- formialire------------------------------->
+
+      <div class="container card mb-4 pt-2" >
+        <fieldset  >
+        <form class="pl-4 pr-4 pt-5 "  action="http://localhost:3000/myform" method="GET"  >
+          <div class="row " >
+            <input type="text" class="col-12 " placeholder="Sujet" id="sujetform" name="sujet">
+          </div>
+          <div class="row" >
+            <input type="date" class="col-6 mt-4 " placeholder="Date" id="dateform" name="dateExpose">
+            <input type="text" class="col-6 mt-4 " placeholder="Tags" id="tagsform" name="tags">
+          </div>
+          
+          <div class="row" >
+            <input type="text" class="col-12 mt-4" placeholder="Les apprenants " id="mocharikinform" name="membres">
+          </div>
+          <div class="row" >
+            <input type="url" class="col-12 mt-4" placeholder="Lien (non obligation)" id="lienform" name="lien">
+          </div>
+          <div class="row" >
+            <input type="submit" onclick="valideform()"  class="col-12 mt-4 mb-5 btn btn-warning text-light" value="Enregistrer">
+          </div>
+        
+      </form>
+    </fieldset>
+        
+
+
+
+    </div>
+    </div>
+
+    <!---------------------  ------------------------------footer------------------------------->
+    <div
+      class="container-fluid  pl-0 pb-0 pr-0 d-flex flex-column flex-wrap" id="backgrndd"
+      id="foter"
+      style="display: block"
+    >
+      <div class=" d-flex flex-row justify-content-end" id="backgrndd">
+        <p class="text-light col-4 font-weight-bold pt-4 h5">Soliveille</p>
+        <p class="text-light col-2">
+          <a class="nav-link pt-4" onclick="pp1()">Accueil </a>
+        </p>
+        <p class="text-light col-2">
+          <a class="nav-link pt-4" onclick="pp2()">Les veilles </a>
+        </p>
+        <p class="text-light col-2">
+          <a class="nav-link pt-4" onclick="pp3()">Ajouter </a>
+        </p>
+        <i
+          class="fa fa-instagram pt-3 pr-4"
+          aria-hidden="true"
+          style="font-size: 36px; color: white"
+        ></i>
+      </div>
+      <div>
+        <p class="text-light mt-5 p-0 mb-0 text-center">
+          Copyrights © 2021 All Rights Reserved by SoliCode.co
+        </p>
+      </div>
+    </div>
+    <!---------------------  ------------------------------DOM------------------------------->
+  
+    <script >
+      var p1 = document.getElementById("page1");
+var p2 = document.getElementById("page2");
+var p3 = document.getElementById("page3");
+function pp1() {
+  p1.style.display = "block";
+  p2.style.display = "none";
+  p3.style.display = "none";
+}
+function pp2() {
+  p1.style.display = "none";
+  p2.style.display = "block";
+  p3.style.display = "none";
+}
+function pp3() {
+  p1.style.display = "none";
+  p2.style.display = "none";
+  p3.style.display = "block";
+}
+var sujet = document.getElementById('sujetform');
+var date = document.getElementsByName('dateform');
+var tags = document.getElementById('tagsform        ');
+var mocharikin = document.getElementById('mocharikinform');
+var lien = document.getElementById('lienform');
+
+
+      </script>
+
+      <script src="asset/js/main.js"></script>
+  </body>
+</html>

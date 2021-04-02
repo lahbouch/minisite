@@ -1,0 +1,114 @@
+/*Google font*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.navbar-nav > li{
+    padding-left:20px;
+    padding-right:20px;
+    font-weight: 600;
+  }
+  nav{
+    box-shadow: 0px -2px 17px rgba(0, 0, 0, 0.25);
+    z-index: 999;
+  }
+  .navbar-nav > li > a.active{
+    text-decoration: underline #07407B;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 15px;  
+}
+.soli{
+    color: #F7931E;
+    font-weight: 500;
+}
+.veille{
+    color: #07407B;
+    font-weight: 600;
+
+}
+p.title-leader{
+    padding-top:100px;
+    font-weight: 600;
+    text-decoration: underline #07407B;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 9px;  
+}
+p.title-leader2{
+    padding-top:90px;
+    font-weight: 600;
+    text-decoration: underline #07407B;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 9px;  
+}
+.centre{
+color: #07407B;
+}
+a{
+    cursor: pointer;
+}
+
+.lead-title{
+    color: #07407B;
+}
+.plead-title{
+    font-weight: 600;
+    font-size: 25px;
+}
+.orange{
+    color: #F7931E ;
+}
+.main-text{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.border-left{
+    border-width: 10px;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#backgrond{
+    background-color: #07407B;
+}
+#backgrndd{
+    background-color: black;
+}
+
+input{
+    border-radius: 10px;
+    outline: 0px;
+    border:1px solid #07407B ;
+    height: 40px;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  .data-collected{
+      color: white;
+      background-color: #07407B ;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+  }
+  .data-collected a  {
+      color: #F7931E  ;
+  }
+.data-collected a:hover{
+color: navajowhite;}
+
+
+
+ 
+
